@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <img src="logo_alura.jpg" alt="Logo"/>
+        <!-- <h1 class="visual_titulo"> ENCRIPTADOR DE TEXTOS </h1> -->
+    </header>
+    <div class="contenedor_columnas">
+        <section class="contenedor_items_izquierda">
+            <input type="text" id="texto_a_encriptar_o_desencriptar" class="contendor_texto_encriptar" placeholder="Ingresa el texto aqui"><br>
+            <div class="contenedor_icono_texto">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p> El texto solo puede contener letras minusculas sin acentos</p>
+            </div>
+            <button onclick="encriptarTexto();" class="visual_boton_encriptar">Encriptar</button>
+            <button onclick="desencriptarTexto();" class="visual_boton_desencriptar">Desencriptar</button>
+        </section>
+        <section class="contenedor_items_derecha">
+            <img src="./seguridad_blanco.png" alt="Imagen seguridad" class="visual_imagen_seguridad"/>
+            <h1 id="h1_a_reemplazar">Ningun texto procesado</h1>
+            <p id="parrafo_a_reemplazar" class="contenedor_texto_respuesta">Aqui encontrara el texto una vez sea encriptado o desencriptado.</p>
+            <button onclick="copiarTextoProcesado();" class="visual_boton_copiar_texto">Copiar</button>
+        </section>
+    </div>
+
+    <footer>
+        Desarrollado por Diego Espinal - 2024&#169
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

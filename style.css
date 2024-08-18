@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Krona+One&family=Matemasie&display=swap');
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #f4f3ee;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 2%;
+    display: flex;
+}
+
+.visual_titulo{
+    font-family: "Jersey 10", sans-serif;
+    font-style: normal;
+    font-size: 80px;
+}
+
+.contenedor_columnas {
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+
+.contendor_texto_encriptar{
+    background-color: #F4F3EE;
+    height: 60%;
+    padding: 5%;
+    text-align: center;
+    border: none;
+    font-size:2rem;
+}
+
+:hover.contendor_texto_encriptar{
+    background-color: #bcb8b12d;
+}
+
+input::placeholder {
+
+    color: #463F3A;
+    font-size: 2rem;
+}
+
+.contenedor_items_izquierda{
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+}
+
+p{
+    color: #463F3A;
+    font-size: large;
+}
+
+h1{
+    color: #463F3A;
+    font-size:x-large;
+}
+
+.contenedor_icono_texto{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.visual_boton_encriptar{
+    width: 40%; 
+    padding: 2%;
+    border-radius: 5%;
+    color: #F4F3EE;
+    background-color: #463F3A;
+    font-size:larger;
+    box-shadow:5px 5px #8A817C ;
+}
+
+:hover.visual_boton_encriptar{
+    background-color: #E0AFA0;
+    color:  #463F3A;
+}
+
+.visual_boton_desencriptar{
+    width: 40%; 
+    padding: 2%;
+    border-radius: 5%;
+    border: solid 2px #463F3A;
+    color: #463F3A;
+    background-color:#BCB8B1;
+    font-size:larger;
+    box-shadow:5px 5px #8A817C ;
+}
+
+:hover.visual_boton_desencriptar{
+    background-color: #E0AFA0;
+    color: #F4F3EE
+}
+
+.contenedor_items_derecha{
+    width: 100%;
+    margin: 0% 10% 0% 10%;
+    padding: 5% 0% 5% 0%;
+    text-align: center;
+    border-radius: 5%;
+    border: solid 2px #463F3A;
+    box-shadow:5px 5px #8A817C ;
+    background-color: white;
+}
+
+.visual_imagen_seguridad{
+    width: 40%;
+    padding: 1%;  
+}
+
+.contenedor_texto_respuesta{
+    display: flex;
+    height: 30%;
+    margin: 6% 15% 0% 15%;
+    align-items: center;
+    color: #463F3A;
+    font-size:x-large;
+    text-align: center;
+    border-radius: 5%;
+}
+
+:hover.contenedor_texto_respuesta{
+    background-color: #bcb8b12d;
+}
+
+.visual_boton_copiar_texto{
+    width: 30%;
+    margin-top: 3%;
+    padding: 2%;
+    box-shadow:5px 5px #8A817C ;
+    color: #463F3A;
+    background-color:#BCB8B1;
+    font-size:larger;
+    box-shadow:5px 5px #8A817C ;
+    border-radius: 5%;
+}
+
+:hover.visual_boton_copiar_texto{
+    background-color: #E0AFA0;
+    color: #F4F3EE
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 4px;
+    text-align: center; 
+    color: #463F3A;
+
+}
+
+@media(max-width:1050px){
+
+    body{
+        width: 90%;
+    }
+
+    .contenedor_columnas{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenedor_items_izquierda{
+        margin-top: 10%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenedor_items_derecha{
+        margin-top: 10%;
+        width: 90%;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+
+    .contendor_texto_encriptar{
+        width: 100%;
+        padding: 0%;
+    }
+
+    .visual_imagen_seguridad{
+        display: none;
+    }
+
+    .contenedor_texto_respuesta{
+        margin: 6% 15% 6% 15%;
+        height: 50%;
+    }
+
+    .visual_boton_copiar_texto{
+        margin-top: 0%;
+    }
+}
